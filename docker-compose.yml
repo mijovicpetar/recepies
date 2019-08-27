@@ -23,3 +23,6 @@ services:
   db:
     image: postgres:10-alpine
     environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=supersecretpassword
